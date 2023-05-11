@@ -10,6 +10,10 @@ import imgVector from "./assets/images/logo-vector-graphics.png";
 import iconFB from "./assets/images/icon-facebook.svg";
 import iconTwitter from "./assets/images/icon-twitter.svg";
 import iconIG from "./assets/images/icon-instagram.svg";
+import iconBlacklist from "./assets/images/icon-blacklist.svg";
+import iconText from "./assets/images/icon-text.svg";
+import iconPreview from "./assets/images/icon-preview.svg";
+import imgDevices from "./assets/images/image-devices.png";
 
 function App() {
 
@@ -41,17 +45,20 @@ function App() {
           
           <h2>Access Clipboard anywhere</h2>
           <p>Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
+          <img src={imgDevices} alt="devices" />
 
           <h2>Supercharge your workflow</h2>
           <p>We’ve got the tools to boost your productivity.</p>
-          
 
+          <img className='Icon' src={iconBlacklist} alt="blacklist" />
           <h3>Create blacklists</h3>
           <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
 
+          <img className='Icon' src={iconText} alt="blacklist" />
           <h3>Plain text snippets</h3>
           <p>Remove unwanted formatting from copied text for a consistent look.</p>
 
+          <img className='Icon' src={iconPreview} alt="blacklist" />
           <h3>Sneak preview</h3>
           <p>Quick preview of all snippets on your Clipboard for easy access.</p>
           
