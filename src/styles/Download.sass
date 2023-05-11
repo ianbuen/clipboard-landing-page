@@ -1,0 +1,23 @@
+@use 'util' as *
+
+.Download
+    display: grid
+    gap: 1.5rem
+    padding: 2rem 0
+
+    button
+        color: white
+        padding: 1rem
+        border-radius: 2rem
+        border: none
+        font-family: inherit
+        font-weight: 600
+        font-size: 1.125rem
+
+        &:nth-of-type(1)
+            background: $strong_cyan
+            box-shadow: 0 3px 1px darken($strong_cyan, 10%)
+        &:nth-of-type(2)
+            background: $light_blue
+            box-shadow: 0 3px 1px darken($light_blue, 10%)
+            
