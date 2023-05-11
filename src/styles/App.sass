@@ -1,9 +1,11 @@
 @use 'util' as *
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap')
 
+$font:  'Bai Jamjuree', sans-serif
+
 .App
     padding: 2rem
-    font-family: 'Bai Jamjuree', sans-serif
+    font-family: $font
     color: $grayish_blue
     text-align: center
 
@@ -39,3 +41,29 @@
 
     img
         width: 100%
+
+.Footer
+    display: grid
+    background: lighten($light_blue, 28%)
+    justify-items: center
+    text-align: center
+    gap: 3rem
+    font-family: inherit
+    padding: 4rem 0 3rem
+
+    img
+        width: 3rem
+
+    ul
+        display: grid
+        gap: 2rem
+        font-family: $font
+        color: $dark_grayish_blue
+
+.Socials
+    display: grid
+    grid-auto-flow: column
+    gap: 2rem
+    
+    img
+        width: 1.5rem
