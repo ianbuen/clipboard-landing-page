@@ -21,3 +21,14 @@
             background: $light_blue
             box-shadow: 0 3px 1px darken($light_blue, 10%)
             
+    
+// tablet and desktop displays (landscape)
+@include width(1080)
+    .Download
+        grid-auto-flow: column
+        justify-self: center
+
+        button
+            width: fit-content
+            height: fit-content
+            padding: 1rem 2rem
