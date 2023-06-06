@@ -4,25 +4,27 @@
 $font:  'Bai Jamjuree', sans-serif
 
 .App
-    padding: 2rem
+    display: grid
+    padding: 1.75rem
     font-family: $font
     color: $grayish_blue
     text-align: center
     background: url('src/assets/images/bg-header-mobile.png') no-repeat
+    background-size: 100%
 
     section
         display: grid
         justify-content: center
-        gap: 1rem
+        gap: 1.5rem
         padding: 3rem 0 5rem
 
     img
         justify-self: center
-        padding: 2.5rem 0
+        padding: 2rem 0
 
     h1
         color: $dark_grayish_blue
-        font-size: 2rem
+        font-size: 1.75rem
         font-weight: 600
         line-height: 1.25
 
@@ -35,8 +37,8 @@ $font:  'Bai Jamjuree', sans-serif
         font-size: 1.5rem
 
     p
+        font-size: 1rem
         line-height: 1.75
-        padding: 0 0.5rem
 
 .Features
 
@@ -45,6 +47,20 @@ $font:  'Bai Jamjuree', sans-serif
 
     .Icon
         width: 3.125rem
+
+.SubFeatures
+    margin: 0 0 8rem
+    
+    h3
+        margin: 1rem 0 0.5rem
+
+    p
+        margin: 0 0 3rem
+
+.Download
+    
+    h1
+        font-size: 1.75rem
 
 .Footer
     display: grid
