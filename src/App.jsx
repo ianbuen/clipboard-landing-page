@@ -31,39 +31,53 @@ function App() {
           <h2>Keep track of your snippets</h2>
           <p>Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.</p>
 
-          <div className='SubFeatures'>
+          <div className='Features__Snippets'>
             <img src={imgPC} alt="photo of computer" />
 
-            <div>
-              <h3>Quick Search</h3>
-              <p>Easily search your snippets by content, category, web address, application, and more.</p>
+            <div className='Features__Group'>
+              <div className='Feature'>
+                <h3>Quick Search</h3>
+                <p>Easily search your snippets by content, category, web address, application, and more.</p>
+              </div>
 
-              <h3>iCloud Sync</h3>
-              <p>Instantly saves and syncs snippets across all your devices.</p>
+              <div className='Feature'>
+                <h3>iCloud Sync</h3>
+                <p>Instantly saves and syncs snippets across all your devices.</p>
+              </div>
 
-              <h3>Complete History</h3>
-              <p>Retrieve any snippets from the first moment you started using the app.</p>
+              <div className='Feature'>
+                <h3>Complete History</h3>
+                <p>Retrieve any snippets from the first moment you started using the app.</p>
+              </div>
             </div>
           </div>
           
           <h2>Access Clipboard anywhere</h2>
-          <p>Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
+          <p>{"Whether you're on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks."}</p>
           <img src={imgDevices} alt="devices" />
 
           <h2>Supercharge your workflow</h2>
-          <p>We’ve got the tools to boost your productivity.</p>
+          <p>{"We've got the tools to boost your productivity."}</p>
 
-          <img className='Icon' src={iconBlacklist} alt="blacklist" />
-          <h3>Create blacklists</h3>
-          <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+          <div className='Features__Tools'>
+            <div className='Feature'>
+              <img className='Icon' src={iconBlacklist} alt="blacklist" />
+              <h3>Create blacklists</h3>
+              <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+            </div>
 
-          <img className='Icon' src={iconText} alt="blacklist" />
-          <h3>Plain text snippets</h3>
-          <p>Remove unwanted formatting from copied text for a consistent look.</p>
+            <div className='Feature'>
+              <img className='Icon' src={iconText} alt="snippets" />
+              <h3>Plain text snippets</h3>
+              <p>Remove unwanted formatting from copied text for a consistent look.</p>
+            </div>
 
-          <img className='Icon' src={iconPreview} alt="blacklist" />
-          <h3>Sneak preview</h3>
-          <p>Quick preview of all snippets on your Clipboard for easy access.</p>
+            <div className='Feature'>
+              <img className='Icon' src={iconPreview} alt="preview" />
+              <h3>Sneak preview</h3>
+              <p>Quick preview of all snippets on your Clipboard for easy access.</p>
+            </div>
+          </div>
           
         </section>
 
@@ -75,7 +89,7 @@ function App() {
           <img src={imgVector} alt="vector graphics logo" />
         </section>
 
-        <section className='Download'>
+        <section className='Downloads'>
           <h2>Clipboard for iOS and Mac OS</h2>
           <p>Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</p>
           <Download />

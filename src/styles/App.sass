@@ -48,7 +48,7 @@ $font:  'Bai Jamjuree', sans-serif
     .Icon
         width: 3.125rem
 
-.SubFeatures
+.Features__Snippets
     margin: 0 0 8rem
     
     h3
@@ -90,10 +90,11 @@ $font:  'Bai Jamjuree', sans-serif
 
 
 // tablet and desktop displays (landscape)
-@include width(1080)
+@include width(1440)
     .App
         background: url('src/assets/images/bg-header-desktop.png') no-repeat
-        padding: 0
+        background-size: 100%
+        padding: 0 8rem
 
         section
             align-content: center
@@ -110,34 +111,107 @@ $font:  'Bai Jamjuree', sans-serif
             font-size: 1.25rem
 
         .Features
-            background: pink
             padding: 6rem 0
 
             p
                 max-width: 50rem
-            
-            img
-                width: 80%
 
-        .SubFeatures
+        .Features__Snippets
             display: grid
-            grid-template-columns: repeat(2, auto)
+            grid-template-columns: auto 1fr
             align-items: center
             text-align: left
-            gap: 8rem
-            margin-top: 2rem
-            position: relative
-            left: -6rem
-
-            div
-                grid-column: 2  
-
-            h3
-                font-size: 1.5rem
-
-            p
-                max-width: 340px
-                font-size: 1rem
+            margin-top: 2rem 
 
             img
-                width: 100%
+                position: relative
+                left: -10rem
+
+            .Features__Group
+                display: grid
+                grid-column: 2
+                gap: 1rem
+                position: relative
+                left: -2rem
+
+                h3
+                    font-size: 1.5rem
+
+                p
+                    font-size: 1rem
+
+        .Features__Tools
+            display: grid
+            grid-template-columns: repeat(3, minmax(0, 1fr))
+            gap: 2rem
+            margin: 2rem 0
+
+            .Feature
+                display: grid
+                align-content: baseline
+                gap: 1rem
+
+                h3
+                    font-size: 1.5rem
+
+                p
+                    font-size: 0.9rem
+
+        .Brands
+            grid-auto-flow: column
+            justify-content: space-evenly
+            align-items: center
+            min-height: fit-content
+            padding: 0
+            gap: 5rem
+
+            img
+                padding: 0
+
+        .Downloads
+            grid-auto-flow: row
+            min-height: fit-content
+            margin: 10rem 0 5rem
+            padding: 0
+            
+            h2
+                font-size: 2rem
+            p
+                font-size: 1rem
+                padding: 0 2.5rem
+
+    .Footer
+        grid-auto-flow: column
+        align-items: center
+        padding: 2rem 4rem
+
+        &>img
+            width: 4rem
+
+        ul
+            grid-template-rows: repeat(2, 1fr)
+            column-gap: 5rem
+            row-gap: 1.25rem
+            grid-auto-flow: column
+            text-align: left
+            justify-self: start
+
+@include width(1920)
+    .App
+        .Features__Snippets
+            display: grid
+            grid-template-columns: auto 480px
+            align-items: center
+            text-align: left
+            margin-top: 2rem 
+            gap: 5rem
+
+            img
+                left: 0rem
+
+            .Features__Group 
+                left: 0rem 
+
+        .Features
+            img
+                max-width: 64rem
